@@ -9,9 +9,6 @@ docs/tables/movies_theaters.md
 docs/tables/reviews.md
 docs/tables/theaters.md
 knexfile.js
-test/routes/movies.test.js
-test/routes/reviews.test.js
-test/routes/theaters.test.js
 node_modules/
 .env
 .vercel
