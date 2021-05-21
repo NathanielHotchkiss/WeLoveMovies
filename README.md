@@ -17,9 +17,6 @@ A server built with Node, Express, and PostgreSQL.
 ## Technology
 
 Node.js  
-
 Express.js  
-
 PostgreSQL  
-
 CORS
