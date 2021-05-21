@@ -4,6 +4,7 @@
 .vscode
 .vercel
 /docs
+/knexfile.js
 
 # dependencies
 /node_modules
