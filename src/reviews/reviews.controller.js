@@ -7,11 +7,13 @@ async function reviewExists(req, res, next) {
   const { reviewId } = req.params;
   const review = await service.read(reviewId);
 
-  if (review) return next();
-  return next({
-    status: 404,
-    message: "Review cannot be found",
-  });
+  if (!review) 
+    return next({
+      status: 404,
+      message: "Review cannot be found",
+    });
+
+  return next();
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -32,6 +34,7 @@ function hasValidFields(req, res, next) {
 
 async function destroy(req, res) {
   const { reviewId } = req.params;
+  
   await service.delete(reviewId);
   res.sendStatus(204);
 }
