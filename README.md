@@ -8,7 +8,7 @@ A server built with Node, Express, and PostgreSQL.
 ## All Movies Page
 ![A screen shot of the All Movies Page](/images/allMovies.png)
 
-## MovieView Page
+## Movie Details Page
 ![A screen shot of the Movie View Page](/images/movieView.png)
 
 ## Theaters Page
