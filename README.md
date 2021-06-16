@@ -26,4 +26,5 @@ A server built with Node, Express, and PostgreSQL.
 Node.js  
 Express.js  
 PostgreSQL  
+Knex.js
 CORS
