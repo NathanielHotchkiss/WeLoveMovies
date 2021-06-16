@@ -2,6 +2,10 @@
 
 A server built with Node, Express, and PostgreSQL. 
 
+## Use
+
+This application allows users to access data about the latest movies, theaters, and reviews.
+
 ## Home Page
 ![A screen shot of the home page](/images/home.png)
 
