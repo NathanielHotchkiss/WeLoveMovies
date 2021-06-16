@@ -27,8 +27,8 @@ This application allows users to access data about the latest movies, theaters, 
 
 ## Technology
 
-Node.js  
-Express.js  
-PostgreSQL  
-Knex.js  
-CORS
+*  Node.js  
+*  Express.js  
+*  PostgreSQL  
+*  Knex.js  
+*  CORS
