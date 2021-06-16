@@ -14,6 +14,13 @@ A server built with Node, Express, and PostgreSQL.
 ## Theaters Page
 ![A screen shot of the Theaters Page](/images/theaters.png)
 
+## Features
+
+* Built an API using RESTful design principles
+* Access to relevant information through route and query parameters
+* Error handlers for the case where a route doesn't exist
+* Utilized Knex to write database queries, completeing CRUD routes in an Express server
+
 ## Technology
 
 Node.js  
