@@ -6,16 +6,16 @@ A server built with Node, Express, and PostgreSQL.
 
 This application allows users to access data about the latest movies, theaters, and reviews.
 
-## Home Page
+## Home
 ![A screen shot of the home page](/images/home.png)
 
-## All Movies Page
+## All Movies
 ![A screen shot of the All Movies Page](/images/allMovies.png)
 
-## Movie Details Page
+## Movie Details
 ![A screen shot of the Movie View Page](/images/movieView.png)
 
-## Theaters Page
+## Theaters
 ![A screen shot of the Theaters Page](/images/theaters.png)
 
 ## Features
