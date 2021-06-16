@@ -30,5 +30,5 @@ This application allows users to access data about the latest movies, theaters, 
 Node.js  
 Express.js  
 PostgreSQL  
-Knex.js
+Knex.js  
 CORS
