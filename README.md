@@ -25,7 +25,7 @@ This application allows users to access data about the latest movies, theaters, 
 * Error handlers for the case where a route doesn't exist
 * Utilized Knex to write database queries, completeing CRUD routes in an Express server
 
-## Technology
+## Technologies
 
 *  Node.js  
 *  Express.js  
