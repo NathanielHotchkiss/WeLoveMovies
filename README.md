@@ -1,10 +1,7 @@
 # WeLoveMovies
 
-A server built with Node, Express, and PostgreSQL. 
-
-## Use
-
-This application allows users to access data about the latest movies, theaters, and reviews.
+Back-end project that sets up a database and builds out specific routes so that users can gain access 
+to data about movies, theaters, and reviews.
 
 ## Home
 ![A screen shot of the home page](/images/home.png)
@@ -32,3 +29,8 @@ This application allows users to access data about the latest movies, theaters, 
 *  PostgreSQL  
 *  Knex.js  
 *  CORS
+
+## Getting started
+1. Fork and clone the repo
+2. Run "npm install"
+3. Run "npm run start:dev"
