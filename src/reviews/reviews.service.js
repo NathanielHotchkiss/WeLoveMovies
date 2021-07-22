@@ -5,13 +5,9 @@ function read(reviewId) {
   return knex("reviews").select("*").where({ review_id: reviewId }).first();
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
 function destroy(review_id) {
   return knex("reviews").where({ review_id }).del();
 }
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 function update(reviewId, updatedReview) {
   return knex("reviews")
@@ -19,8 +15,6 @@ function update(reviewId, updatedReview) {
     .where({ review_id: reviewId })
     .update(updatedReview, "*");
 }
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 const addCritic = mapProperties({
   critic_id: "critic.critic_id",
@@ -41,8 +35,6 @@ function getUpdatedRecord(reviewId) {
       return updatedRecord;
     });
 }
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 module.exports = {
   read,

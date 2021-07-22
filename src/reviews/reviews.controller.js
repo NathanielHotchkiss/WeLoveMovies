@@ -1,8 +1,6 @@
 const service = require("./reviews.service");
 const asyncErrorBoundary = require("../errors/asyncErrorBoundary");
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
 async function reviewExists(req, res, next) {
   const { reviewId } = req.params;
   const review = await service.read(reviewId);
@@ -16,8 +14,6 @@ async function reviewExists(req, res, next) {
   return next();
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
 function hasValidFields(req, res, next) {
   const { data: { score, content } = {} } = req.body;
 
@@ -30,8 +26,6 @@ function hasValidFields(req, res, next) {
   return next();
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
 async function destroy(req, res) {
   const { reviewId } = req.params;
   
@@ -39,16 +33,12 @@ async function destroy(req, res) {
   res.sendStatus(204);
 }
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
 async function update(req, res) {
   const { reviewId } = req.params;
 
   await service.update(reviewId, req.body.data);
   res.json({ data: await service.getUpdatedRecord(reviewId) });
 }
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 module.exports = {
   delete: [asyncErrorBoundary(reviewExists), asyncErrorBoundary(destroy)],
