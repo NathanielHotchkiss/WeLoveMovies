@@ -13,6 +13,8 @@
     "reset": "npm run rollback && npm run migrate && npm run seed",
     "rollback": "USER=nathan knex migrate:rollback",
     "seed": "knex seed:run",
+    "build": "cd WeLoveMovies-Server && npm run build",
+    "install": "cd WeLoveMovies-Server && npm install",
     "start": "node src/server.js",
     "start:dev": "nodemon src/server.js",
     "start:solution": "docker-compose up --build",
